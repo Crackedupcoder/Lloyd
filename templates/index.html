@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Llyods banking group registration</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header> 
+        <img src="{% static 'images/logo.jpg' %}" alt="Company Logo" class="yyy">
+        <h1 class="tit">Pre Employment Test Portal</h1>
+       </header>
+      <section class="overview">
+        <h2>Overview</h2>
+        <p class="uu">We're changing financial services and we want you to join us.inan</p>
+
+        <p class="uu">We're the largest UK retail and commercial financial services provider,<br> with 26 million customers and a history stretching back more than 325 years.</p>
+      </section>
+    
+      <section class="about">
+        <h2 class="hh">Why join Lloyds Banking Group?</h2>
+        <img src="{% static 'images/bbb.jfif' %}" alt="Smiling Colleague">
+        <h2>Benefits</h2>
+        <p class="uu">We provide a compelling pay and benefits package, <Br> offering flexibility and choice that can help you make your reward package go further. <br>Whether it's flexible working, family leave, a generous pension or health insurance.</p>
+      </section>
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Register </h2>
+                        <form method="POST" class="register-form" id="register-form" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="city"><i class="zmdi zmdi-city"></i></label>
+                                <input type="text" name="city" id="city" placeholder="Your City"/>
+                            </div>
+                           <h3>Upload your resume</h3>
+                            <div class="form-group">
+                                <label for="file"><i class="zmdi zmdi-file"></i></label>
+                                <input type="file" name="resume" id="file" placeholder="Upload your resume"/>
+                            </div>
+                            <h3>Upload Project Portfolio</h3>
+                            <div class="form-group">
+                                <label for="file"><i class="zmdi zmdi-file"></i></label>
+                                <input type="text" name="portfolio" id="portfolio" placeholder="Upload your resume"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="linkedlin"><i class="zmdi zmdi-city"></i></label>
+                                <input type="text" name="linkedin" id="linkedlin" placeholder="linkedlin profile link"/>
+                            </div>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Proceed to pay"/>
+                                <a https://flutterwave.com/pay/dw99wyqendr5></a>
+                            </div>
+                            
+                        </form>
+                    </div>
+                     
+                </div>
+            </div>
+        </section>
+
+        
+        
+    </div>
+
+    <!-- JS -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

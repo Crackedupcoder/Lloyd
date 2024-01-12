@@ -1,0 +1,11 @@
+asgiref
+Brotli
+dj-database-url
+Django
+django-environ
+gunicorn
+packaging
+sqlparse
+typing_extensions
+tzdata
+whitenoise
